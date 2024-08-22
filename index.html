@@ -27,10 +27,22 @@
                         </li>
                     </ul>
                 </nav>
-                <div class="header__icons">
-                    <div>tel</div>
-                    <div>fb</div>
-                    <div>insta</div>
+                <div class="header__socials">
+                    <a href="#">
+                        <svg class="header__socials-icon" width="32" height="32">
+                          <use href="./images/icons.svg#icon-telephone"></use>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg class="header__socials-icon" width="32" height="32">
+                          <use href="./images/icons.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg class="header__socials-icon" width="32" height="32">
+                          <use href="./images/icons.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
                 </div>
                 <button class="header__burger" type="button"></button>
             </div>
@@ -62,7 +74,16 @@
                             та приємний сервіс. Наші косметологічні процедури та препарати допоможуть вам підтримувати свою красу та молодість. 
                             З нами краса назавжди!</p>
                     </div>
-                    <div class="about-section__photo"></div>
+                    <div class="about-section__photo">
+                        <ul>
+                            <li>
+                                <img src="./images/before salon.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="./images/after salon.jpg" alt="">
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
@@ -96,20 +117,20 @@
                 <ul class="procedures-section__list">
                     <li class="procedures-section__item">
                         <article class="procedure-card">
-                            <h3>Маски 
-                                для обличчя</h3>
+                            <img class="procedure-card__image" src="./images/procedure masks.jpg" alt="Маски для обличчя">
+                            <h3 class="procedure-card__title">Маски для обличчя</h3>
                         </article>
                     </li>
                     <li class="procedures-section__item">
                         <article class="procedure-card">
-                            <h3>Маски 
-                                для обличчя</h3>
+                            <img class="procedure-card__image" src="./images/procedure injection.jpg" alt="Ін'єкції для обличчя">
+                            <h3 class="procedure-card__title">Ін'єкції для обличчя</h3>
                         </article>
                     </li>
                     <li class="procedures-section__item">
                         <article class="procedure-card">
-                            <h3>Очищення 
-                                обличчя</h3>
+                            <img class="procedure-card__image" src="./images/procedure clean.jpg" alt="Очищення обличчя">
+                            <h3 class="procedure-card__title">Очищення обличчя</h3>
                         </article>
                     </li>
                 </ul>
@@ -158,9 +179,23 @@
                     <p>beautyzone@gmail.com</p>
                     <p>Україна, м. Київ, 
                         вул. Тараса Шевченка 5</p>
-                    <p>tel</p>
-                    <p>fb</p>
-                    <p>insta</p>
+                        <div class="footer__socials">
+                            <a href="#">
+                                <svg class="footer__socials-icon" width="42" height="42">
+                                  <use href="./images/icons.svg#icon-telephone"></use>
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <svg class="footer__socials-icon" width="42" height="42">
+                                  <use href="./images/icons.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <svg class="footer__socials-icon" width="42" height="42">
+                                  <use href="./images/icons.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </div>
                     <p>Політика конфіденційності</p>
                     <p>© 2022 Дані захищені</p>
                 </address>
@@ -170,3 +205,4 @@
     
 </body>
 </html>
+
