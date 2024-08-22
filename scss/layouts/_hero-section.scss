@@ -1,0 +1,47 @@
+.hero-section {
+    padding: 122px 0;
+    background-image: url(../images/hero-section-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.hero-section__container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 530px;
+    margin-left: 100px;    
+}
+
+.hero-section__text {
+    margin-bottom: 16px;
+}
+
+.hero-section__title {
+    margin: 0;
+    
+    font-family: 'Play', sans-serif;
+    font-size: 140px;
+    font-weight: 700;
+    line-height: 0.8;
+    color: var(--color-brand-normal);
+}
+
+.hero-section__box {
+    max-width: 238px;  
+}
+
+
+.hero-section__button {
+    margin-bottom: 14px;
+}
+
+.hero-section__promo {
+    font-size: 12px;
+    line-height: 1.5;
+    color: var(--color-secondary-normal);
+    margin-bottom: 0;
+    text-align: center;
+}
