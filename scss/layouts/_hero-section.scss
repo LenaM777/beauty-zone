@@ -1,47 +1,89 @@
 .hero-section {
-    padding: 122px 0;
+    padding: 72px 0 56px;
     background-image: url(../images/hero-section-background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
+
+    @media screen and (min-width: $bp-tablet) {
+        padding: 122px 0 126px;
+        background-position: center;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        align-items: center;
+          
+        
+        @media screen and (min-width: $bp-desktop) {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            align-items: flex-start;
+            max-width: 530px;
+            margin-left: 100px;   
+        }
+    }
+    
+    &__text {
+        margin-bottom: 0;
+        font-size: 12px;
+        line-height: 1.5;
+        text-align: center;
+
+        @media screen and (min-width: $bp-desktop) {
+            margin-bottom: 16px;
+            font-size: 18px;
+            line-height: 1.17;
+            text-align: left;
+        }
+    }
+    
+    &__title {
+        margin: 0;
+        font-family: 'Play', sans-serif;
+        font-size: 54px;
+        font-weight: 700;
+        line-height: 0.8;
+        color: var(--color-brand-normal);
+
+        @media screen and (min-width: $bp-desktop) {
+            font-size: 140px;
+        }
+    }
+    
+    &__box {
+        max-width: 186px;  
+
+        @media screen and (min-width: $bp-desktop) {
+            max-width: 238px; 
+        }
+    }
+    
+    
+    &__button {
+        margin-bottom: 8px;
+
+        @media screen and (min-width: $bp-desktop) {
+            margin-bottom: 14px;
+        }
+    }
+    
+    &__promo {
+        font-size: 11px;
+        line-height: 1.6;
+        color: var(--color-secondary-normal);
+        margin-bottom: 0;
+        text-align: center;
+
+        @media screen and (min-width: $bp-desktop) {
+            font-size: 12px;
+            line-height: 1.5; 
+        }
+    }
     
 }
 
-.hero-section__container {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    max-width: 530px;
-    margin-left: 100px;    
-}
-
-.hero-section__text {
-    margin-bottom: 16px;
-}
-
-.hero-section__title {
-    margin: 0;
-    
-    font-family: 'Play', sans-serif;
-    font-size: 140px;
-    font-weight: 700;
-    line-height: 0.8;
-    color: var(--color-brand-normal);
-}
-
-.hero-section__box {
-    max-width: 238px;  
-}
-
-
-.hero-section__button {
-    margin-bottom: 14px;
-}
-
-.hero-section__promo {
-    font-size: 12px;
-    line-height: 1.5;
-    color: var(--color-secondary-normal);
-    margin-bottom: 0;
-    text-align: center;
-}

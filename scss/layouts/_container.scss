@@ -2,5 +2,12 @@
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
-    padding: 0 100px;
+    padding: 0 20px;
+
+    @media screen and (min-width: $bp-tablet) {
+      width: 100%;
+      max-width: 1440px;
+      margin: 0 auto;
+      padding: 0 100px;
+    }
   }
