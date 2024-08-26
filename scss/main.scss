@@ -7,6 +7,12 @@
 @import './components/buttons';
 @import './components/about-card';
 @import './components/advantage-card';
+@import './components/procedure-card';
+@import './components/carousel-button';
+@import './components/pagination';
+@import './components/input';
+@import './components/form-terms';
+
 
 
 
@@ -18,6 +24,16 @@
 @import './layouts/section';
 @import './layouts/about-section';
 @import './layouts/advantages-section';
+@import './layouts/procedures-section';
+@import './layouts/contact-section';
+
+
+
+
+
+
+
+
 
 
 
@@ -56,69 +72,6 @@
 
 
 /* procedures section*/
-
-.procedures-section__container {
-    display: flex;
-    align-items: center;
-    gap: 32px;
-}
-
-.procedures-section__list {
-    display: flex;
-    
-    gap: 16px;
-}
-
-.procedure-card {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: flex-end;
-    padding: 0 77px 32px 0;
-    border-radius: 4px, 120px, 4px, 120px;
-    min-width: 344px;
-    min-height: 456px;
-    overflow: hidden;
-}
-
-.procedure-card__image {
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.procedure-card__title {
-    font-size: 22px;
-    line-height: 1.18;
-    color: var(--color-brand-light);
-    text-align: center;
-    margin-bottom: 0;
-}
-
-.procedures-section__button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    width: 44px;
-    height: 44px;
-    padding: 0;
-    fill: var(--color-brand-dark);
-    background-color: transparent;
-    border-radius: 50%;
-    border: 2px solid var(--color-brand-dark);
-    cursor: pointer;
-}
-
-.procedures-section__button:hover {
-    fill: var(--color-brand-light);
-    background-color: var(--color-brand-normal);
-    border: 2px solid var(--color-brand-normal);
-}
 
 
 /* contact section*/
