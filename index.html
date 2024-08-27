@@ -73,7 +73,7 @@
                         <h1 class="hero-section__title">Beauty Zone</h1>
                     </div>
                     <div class="hero-section__box">
-                        <button class="hero-section__button button" type="button">Замовити дзвінок</button>
+                        <button class="hero-section__button button modal-btn-open" type="button">Замовити дзвінок</button>
                         <p class="hero-section__promo">Запишись та отримай безкоштовну консультацію нашого косметолога</p>
                     </div>
                 </div>
@@ -324,8 +324,63 @@
             </div>
         </div>
     </footer>
+
+    <div class="backdrop is-hidden">
+        <div class="modal">
+            <button class="modal__btn-close modal-btn-close" type="button">
+                <svg width="32" height="32">
+                    <use href="./images/icons.svg#icon-close"></use>
+                  </svg> 
+            </button>
+            <h2 class="modal__title">Замовити <br>дзвінок</h2>
+            <p class="modal__text">Запишіться <span class="text-brand">безкоштовно</span> <br>
+                та отримайте подарунок</p>
+            <form name="modal-form" autocomplete="off">
+                <div class="modal__form-field input">
+                    <label class="input__label" for="user-name"></label>
+                    <input 
+                    class="input__control"
+                     type="text"
+                     name="user-name"
+                     id="user-name"
+                     placeholder="Ваше ім'я та прізвище"
+                     pattern=""
+                     required />
+                </div>
+                <div class="modal__form-field input">
+                    <label class="input__label" for="user-tel"></label>
+                    <input 
+                    class="input__control" 
+                    type="tel" 
+                    name="user-tel" 
+                    id="user-tel"
+                    placeholder="Ваш номер телефону"
+                    pattern="^\+[0-9]{12}"
+                    required />
+                </div>
+                <div class="modal__form-field input">
+                    <label class="input__label" for="user-email"></label>
+                    <input 
+                    class="input__control" 
+                    type="email"
+                    name="user-email"
+                    id="user-email"
+                    placeholder="Ваша електронна пошта"
+                    pattern=""
+                    required />
+                </div>
+                <button class="modal__button button" type="submit">Записатись безкоштовно</button>
+                <p class="form-terms">Натискаючи на кнопку я погоджуюсь <a class="form-terms__links" href="#">з політикою конфіденційності</a></p>
+            </form>
+        </div>
+    </div>
+
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/prosedures-slider.js"></script>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
 
