@@ -56,13 +56,55 @@
                         </svg>
                     </a>
                 </div>
-                <button class="header__burger" type="button">
+                <button class="header__burger menu-btn-open" type="button">
                     <svg width="24" height="24">
                         <use href="./images/icons.svg#icon-vector"></use>
                       </svg>
                 </button>
-            </div>
-        </div>
+                <div class="mobile-menu">
+                    <button class="mobile-menu__btn-close menu-btn-close" type="button">
+                        <svg width="24" height="24">
+                            <use href="./images/icons.svg#icon-close"></use>
+                        </svg> 
+                    </button>
+                    <a class="mobile-menu__logo" href="/">
+                        <img
+                          src="./images/logo.svg"
+                          alt="Логотип"
+                        />
+                      </a>
+                    <ul class="mobile-menu__list">
+                        <li>
+                            <a class="mobile-menu__link" href="">Про нас</a>
+                        </li>
+                        <li>
+                            <a class="mobile-menu__link" href="">Чому ми</a>
+                        </li>
+                        <li>
+                            <a class="mobile-menu__link" href="">Наші процедури</a>
+                        </li>
+                        <li>
+                            <a class="mobile-menu__link" href="">Контакти</a>
+                        </li>
+                    </ul>
+                    <div class="mobile-menu__socials">
+                        <a href="#">
+                            <svg class="mobile-menu__socials-icon" width="32" height="32">
+                              <use href="./images/icons.svg#icon-telephone"></use>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg class="mobile-menu__socials-icon" width="32" height="32">
+                              <use href="./images/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg class="mobile-menu__socials-icon" width="32" height="32">
+                              <use href="./images/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
     </header>
     <main>
         <section class="hero-section">
@@ -330,7 +372,7 @@
             <button class="modal__btn-close modal-btn-close" type="button">
                 <svg width="32" height="32">
                     <use href="./images/icons.svg#icon-close"></use>
-                  </svg> 
+                </svg> 
             </button>
             <h2 class="modal__title">Замовити <br>дзвінок</h2>
             <p class="modal__text">Запишіться <span class="text-brand">безкоштовно</span> <br>
@@ -381,6 +423,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/prosedures-slider.js"></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>
 
